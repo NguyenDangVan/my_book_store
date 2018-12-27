@@ -1,7 +1,7 @@
 <% provide :title, t("home") %>
 <div class="col-md-3">
   <ul class="list-group ml-2">
-    <li class="list-group-item text-center bg-primary">
+    <li class="list-group-item text-center list-group-item-primary">
       Categories
     </li>
   <%# @categories.each do |ctg| %>
@@ -36,7 +36,7 @@
     </li>
     <%# end %>
     <%# end %>
-    <li class="list-group-item text-center bg-primary">
+    <li class="list-group-item text-center list-group-item-primary">
       <%= link_to "New category", "new_admin_category_path", class: "text-body" %>
     </li>
   </ul>
