@@ -3,12 +3,18 @@ en:
   users:
     new:
       sign_up: "Sign up"
+      sign_in: "Log in"
       name: "Your Name"
       your_name: "Jame Smith"
       email: "example@gmail.com"
     create:
       success: "Sign up successfully."
       failed: "Sign up failed."
+  sessions:
+    new:
+      sign_in: "Log in"
+      new_user: "New user? "
+      sign_up_now: "Sign up now"
   layouts:
     header:
       title: "BoOknD"
@@ -18,6 +24,7 @@ en:
       settings: "Settings"
       log_out: "Log out"
       sign_up: "Sign up"
+      sign_in: "Log in"
     footer:
       company: "Sun* Inc."
       company_tower: "Handico Tower, CA 94107"
