@@ -9,4 +9,5 @@ class User < ApplicationRecord
     format: {with: VALID_EMAIL_REGEX}
 
   before_save {email.downcase!}
+  has_secure_password
 end

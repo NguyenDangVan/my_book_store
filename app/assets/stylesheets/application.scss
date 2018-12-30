@@ -1,4 +1,5 @@
 /*
+ *= requrie custom
  *= require_tree .
  *= require_self
  */
@@ -7,6 +8,6 @@
 @import "bootstrap";
 
 .bg-blueviolet {
-   background-color: blueviolet;
+   background-color: #563d7c;
    padding: 0.25rem 1.5rem;
  }
