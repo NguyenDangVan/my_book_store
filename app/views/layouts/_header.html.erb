@@ -29,13 +29,14 @@
                <li><%= link_to t(".settings"), "#" %></li>
                <li class="divider"></li>
                <li>
-                 <%= link_to t(".log_out"), "#", method: :delete %>
+                 <%= link_to t(".log_out"), log_out_path, method: :delete %>
                </li>
             </ul>
           </li>
         </ul>
        <%# else %>
         <%= link_to t(".sign_up"), sign_up_path, class: "form-inline nav-item btn btn-outline-primary" %>
+        <%= link_to t(".sign_in"), log_in_path, class: "form-inline nav-item btn btn-outline-primary" %>
        <%# end %>
     </div>
   </div>

@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     @user = User.new user_params
     if @user.save
       flash[:success] = t ".success"
+      log_in @user
       redirect_to root_path
     else
       flash[:danger] = t ".failed"
