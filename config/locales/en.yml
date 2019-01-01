@@ -7,6 +7,7 @@ en:
       name: "Your Name"
       your_name: "Jame Smith"
       email: "example@gmail.com"
+      create: "Create account"
     create:
       success: "Sign up successfully."
       failed: "Sign up failed."
@@ -15,6 +16,8 @@ en:
       sign_in: "Log in"
       new_user: "New user? "
       sign_up_now: "Sign up now"
+    create:
+      invalid: "Invalid email/password combination"
   layouts:
     header:
       title: "BoOknD"
@@ -38,3 +41,11 @@ en:
         address: "Adress"
         phone: "Phone"
         all: "All users"
+        create_user: "Create user"
+      create:
+        add_success: "Add successfull user"
+        add_failed: "Add user failed."
+      show:
+        not_found: "Not found"
+      new:
+
