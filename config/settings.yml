@@ -1,0 +1,7 @@
+users:
+  name:
+    maximum: 50
+  email:
+    maximum: 200
+pages:
+  per_user: 10

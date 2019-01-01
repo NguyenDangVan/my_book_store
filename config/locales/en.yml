@@ -29,3 +29,12 @@ en:
       company: "Sun* Inc."
       company_tower: "Handico Tower, CA 94107"
       company_address: "Phạm Hùng, Mễ Trì, Nam Từ Liêm, Hà Nội"
+
+  admin:
+    users:
+      index:
+        name: "Name"
+        email: "Email"
+        address: "Adress"
+        phone: "Phone"
+        all: "All users"
