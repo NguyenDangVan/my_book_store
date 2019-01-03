@@ -47,5 +47,20 @@ en:
         add_failed: "Add user failed."
       show:
         not_found: "Not found"
-      new:
-
+        shipper: "Shipper"
+        admin: "Admin"
+        user: "User"
+    categories:
+      index:
+        create_ctg: "Create category"
+        categories: "Categories"
+        list_ctg: "List Categories"
+        search: "Search"
+        edit: "Edit"
+        delete: "Delete"
+        message_delete_confirm: "Do u want to delete "
+        stt: "STT"
+        ctg_name: "Category Name"
+        book: "Book"
+        descript: "Description"
+        action: "Action"

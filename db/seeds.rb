@@ -18,3 +18,8 @@ User.create! name: "Dang Van", email: "dinvvan@gmail.com",
                password_confirmation: "123123",
                role: 0
 end
+
+10.times do |n|
+  Category.create! name: FFaker::Book.unique.genre,
+    description: FFaker::Lorem.paragraph(5)
+end
