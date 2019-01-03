@@ -12,13 +12,12 @@
           <%= button_tag @user.is_role, class: "btn btn-primary dropdown-toggle",
             data: {toggle: "dropdown"} %>
           <div class="dropdown-menu">
-            <%= link_to "User", admin_user_path(params.permit().merge(role: 0)),
+            <%= link_to t(".user"), admin_user_path(params.permit().merge(role: 0)),
               method: :put, remote:true, class: "dropdown-item" %>
-            <%= link_to "Admin", admin_user_path(params.permit().merge(role: 1)),
+            <%= link_to t(".admin"), admin_user_path(params.permit().merge(role: 1)),
               method: :put, remote:true, class: "dropdown-item" %>
-            <%= link_to "Shipper", admin_user_path(params.permit().merge(role: 2)),
+            <%= link_to t(".shipper"), admin_user_path(params.permit().merge(role: 2)),
               method: :put, remote:true, class: "dropdown-item" %>
-
           </div>
         </div>
       <% end %>

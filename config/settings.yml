@@ -5,3 +5,4 @@ users:
     maximum: 200
 pages:
   per_user: 10
+  per_category: 5
