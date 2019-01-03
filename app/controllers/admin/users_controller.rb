@@ -23,13 +23,28 @@ class Admin::UsersController < ApplicationController
     end
   end
 
-  # def show
-  #   @user = User.find_by id: params[:id]
+  def show
+    @user = User.find_by id: params[:id]
 
-  #   return if @user
-  #   flash[:danger] = t ".not_found"
-  #   redirect_to admin_root_path
-  # end
+    return if @user
+    flash[:danger] = t ".not_found"
+    redirect_to admin_root_path
+  end
+
+  def update
+    if current_user.admin?
+      @user = User.find_by id: params[:id]
+      if @user.update_attributes role: params[:role]
+        respond_to do |format|
+          format.html do
+            flash[:success] = "Assigned new permission!"
+            redirect_to @user
+          end
+          format.js
+        end
+      end
+    end
+  end
 
   private
 
