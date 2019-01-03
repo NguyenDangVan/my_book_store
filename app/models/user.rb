@@ -12,5 +12,23 @@ class User < ApplicationRecord
   has_secure_password
 
   scope :get_by_role, -> role{where role: role}
-  scope :select_users, ->{select :id, :name, :email, :phone, :created_at}
+  scope :select_users, ->{select :name, :email, :phone, :created_at}
+
+  def is_role
+    if self.role == 0
+      return "User"
+    else
+      self.role == 1 ? "Admin" : "Shipper"
+    end
+  end
+
+  def admin?
+    self.role == 1 ? true : false
+  end
+
+  def shipper?
+    self.role == 0 ? false : true
+  end
+
+  def load_permission_user; end
 end

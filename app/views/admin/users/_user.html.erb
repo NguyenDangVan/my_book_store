@@ -1,5 +1,5 @@
 <tr class="d-flex">
-  <td class="col-3"><%= user.name %></td>
+  <td class="col-3"><%= link_to user.name, "#", class: "text-dark" %></td>
   <td class="col-3"><%= user.email %></td>
   <td class="col-3"><%= user.phone %></td>
   <td class="col-2 text-center"><%= user.created_at.strftime("%d-%m-%Y") %></td>

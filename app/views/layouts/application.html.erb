@@ -11,6 +11,7 @@
 
   <body>
     <%= render "layouts/header" %>
+    <a href="#"" id="backtoTop" title="Back to Top">&uarr;</a>
     <div class="container">
       <% flash.each do |message_type, message| %>
         <div class="alert alert-<%= message_type %>"><%= message %></div>

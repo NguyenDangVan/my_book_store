@@ -15,8 +15,4 @@ module SessionsHelper
     session.delete :user_id
     @current_user = nil
   end
-
-  def check_admin?
-    current_user.role == 0 ? false : true
-  end
 end
