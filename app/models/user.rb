@@ -12,4 +12,5 @@ class User < ApplicationRecord
   has_secure_password
 
   scope :get_by_role, -> role{where role: role}
+  scope :select_users, ->{select :id, :name, :email, :phone, :created_at}
 end

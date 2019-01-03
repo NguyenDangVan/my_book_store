@@ -11,15 +11,15 @@
   <%= link_to "Users", admin_root_path(params.permit().merge(role: 0)), class: "btn" %>
   <%= link_to "Admins", admin_users_path(params.permit().merge(role: 1)), class: "btn" %>
   <%= link_to "Publisher", admin_users_path(params.permit().merge(role: 2)), class: "btn" %>
+  <%= link_to "Create new user", new_admin_users_path, class: "btn" %>
 </h5>
 <div class="col-md-12">
   <table class="table table-bordered table-hover bg-primary">
     <thead>
       <tr class="d-flex text-center">
-        <th class="col-2"><%= t(".name") %></th>
-        <th class="col-2"><%= t(".email") %></th>
-        <th class="col-2"><%= t(".address") %></th>
-        <th class="col-2"><%= t(".phone") %></th>
+        <th class="col-3"><%= t(".name") %></th>
+        <th class="col-3"><%= t(".email") %></th>
+        <th class="col-3"><%= t(".phone") %></th>
         <th class="col-2"><%= t(".joined") %></th>
         <th class="col-1"><%= t(".return") %></th>
       </tr>
